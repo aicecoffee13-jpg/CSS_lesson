@@ -13,3 +13,19 @@ h1{
   border-bottom: 5px solid #a87bc7;
   margin-bottom: 30px;
 }
+
+.box{
+  border: 2px solid #e1cbf0;
+  padding: 30px;
+  margin: 0 0 40px;
+  border-radius: 8px;
+}
+
+h2{
+  background: #faf5ff;
+  padding: 0.5em 1em;
+  border-left: 5px solid #a87bc7;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
