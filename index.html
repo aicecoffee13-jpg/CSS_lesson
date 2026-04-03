@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>CSSレッスン</title>
+</head>
+
+<!-- 
+  class名にする際は、基本名前を同じにする。
+  部分的に変更する場合は、後の部分をスペースを空けて名前を付ける。
+-->
+
+<body>
+  <h1>よく使うCSSのプロパティ</h1>
+  <section>
+    <h2>font-size</h2>
+    <p>文字サイズを設定する。</p>
+    <dl>
+      <dt>プロパティ＋値の例</dt>
+      <dd>font-size:20px;</dd>
+      <dd>font-size:2rem;</dd>
+      <dd>font-size:50%;</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>font-family</h2>
+    <p>フォントの種類を指定します。「,」カンマで区切って、複数してできます。複数指定した時は、左から優先される。</p>
+    <dl>
+      <dt>プロパティ＋値の例</dt>
+      <dd>font-family: "Noto Sans JP", sans-serif;</dd>
+    </dl>
+  </section>
+
+
+  <section>
+    <h2>font-weight</h2>
+    <p>フォントの太さを設定します。</p>
+    <dl>
+      <dt>プロパティ＋値の例</dt>
+      <dd>font-weight: 700;</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>line-height</h2>
+    <p>行の高さ（行間）を設定します。単位無しで1文字の大きさを1として設定します。</p>
+    <dl>
+      <dt>プロパティ＋値の例</dt>
+      <dd>line-height: 1.7;</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2> text-align（テキストアライン）</h2>
+    <p>テキストの揃える位置を設定します。インラインボックス要素をセンター寄せする場合は、親に「text-align: center;」を付ける。</p>
+    <dl>
+      <dt>プロパティ＋値の例</dt>
+      <dd> text-align: center;</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>color</h2>
+    <p>文字の色を設定します。</p>
+    <dl>
+      <dt>プロパティ＋値の例</dt>
+      <dd>color: #333;</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>background</h2>
+    <p>背景の色や画像の指定や位置などをしてします。</p>
+    <dl>
+      <dt>プロパティ＋値の例</dt>
+      <dd>background-color: #f5f2e5;</dd>
+      <dd> background-image: url(../images/bg.png);</dd>
+      <dd>background-repeat: repeat;</dd>
+      <dd>background-position: center center;</dd>
+      <dd>background-size: 80px auto;</dd>
+      <dd>background: #f5f2e5 url(../images/bg.png) repeat center center/80px auto;</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>width &amp; height</h2>
+    <p>幅、高さを設定します。</p>
+    <dl>
+      <dt>プロパティ＋値の例</dt>
+      <dd>width: 80%;</dd>
+      <dd> height: auto;</dd>
+      <dd>max-width: 1000px;</dd>
+      <dd>min-width: 500px;</dd>
+      <dd>width: clamp(500px, 80%, 1000px);//一括</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>display</h2>
+    <p>ボックスモデルを切り替えます。</p>
+    <dl>
+      <dt>プロパティ＋値の例</dt>
+      <dd>display: block;//ブロックボックス</dd>
+      <dd>display: inline;//インラインボックス</dd>
+      <dd>display: inline-block;//インラインとブロックの特性を併せ持つ</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>margin</h2>
+    <p>要素（タグ）の外側の余白を設定する。上下のマージンは重なるので大きい方が採用される。</p>
+    <dl>
+      <dt>プロパティ＋値の例</dt>
+      <dd> margin-bottom: 50px;</dd>
+      <dd>margin: 0 auto 50px ;//左右にautoを書くと真ん中寄せになる。但し、ブロックボックスに限る。</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>padding</h2>
+    <p>要素の内側を設定します。パディングの数値はデフォルトでは幅・高さにプラスされる。</p>
+    <dl>
+      <dt>プロパティ＋値の例</dt>
+      <dd>padding: 20px 5%;</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>border</h2>
+    <p>要素の境界に線を引く</p>
+    <dl>
+      <dt>プロパティ＋値の例</dt>
+      <dd>border-width: 2px;</dd>
+      <dd>border-style: solid;</dd>
+      <dd>border-color: black;</dd>
+      <dd> border: 2px solid black;</dd>
+      <dd>border-bottom: 2px solid black;</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>box-sizing</h2>
+    <p>幅と高さの数値にパディングと線の数値を含めるかどうか。</p>
+    <dl>
+      <dt>プロパティ＋値の例</dt>
+      <dd>box-sizing: border-box;//内側に切り替え</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>letter-spacing</h2>
+    <p>字間を設定します。</p>
+    <dl>
+      <dt>プロパティ＋値の例</dt>
+      <dd></dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>border-radius</h2>
+    <p>要素の角を丸めます。</p>
+    <dl>
+      <dt>プロパティ＋値の例</dt>
+      <dd> border-radius: 30px;</dd>
+      <dd>border-radius: 30px 30px 30px 30px;//左上から時計回り</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2></h2>
+    <p></p>
+    <dl>
+      <dt>プロパティ＋値の例</dt>
+      <dd></dd>
+    </dl>
+  </section>
+
+</body>
+
+
+</html>
