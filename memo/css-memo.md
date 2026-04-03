@@ -75,3 +75,7 @@ html{font-size:62.5%}は10pxで設定される。その為、20pxにしたい際
   idセレクタ：#id名
 
 * remや％は親に対しての割合。
+
+## list
+* 画像を貼る場合はbackgroundで行う。
+* befor after のタグを使用する
