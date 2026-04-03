@@ -1,4 +1,4 @@
-（）## フレキシブルボックスレイアウト
+## フレキシブルボックスレイアウト
 * display 
 必ず親に書く。
 子要素までしか掛からない。孫要素には掛からない。
@@ -9,6 +9,11 @@
 * flex-shrink: 0;
 0を指定すると縮小されない。
 * flex-basis
-widthよりもflex-basisが優先される。
+flex内では、widthよりもflex-basisが優先される。
 flex-basisは主軸（横）、交差軸（縦）がある
 スタンダードは主軸（横）方向に並んでいる。軸を回転できる。
+* flex-direction
+flex-directionが主軸
+rowが横方向、columnが縦方向
+特にcolumnがよく使う。パソコンからスマホ用に変更する時に
+reverseが逆方向から始まる。

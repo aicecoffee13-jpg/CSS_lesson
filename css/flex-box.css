@@ -96,3 +96,20 @@ h2{
 .case4 .child{
   flex-basis: 20%;
 }
+/* ショートハンド */
+
+.case5 .child{
+  flex: 1 0 10%;
+}
+/* case6 並び順 */
+.case6 .child{
+  width: 15%;
+}
+.case6 .child:nth-of-type(3){
+order: -1;
+background: #a87bc7;
+}
+/* case7 並べる方向（軸） */
+.case7 .oya{
+  flex-direction: row-reverse;
+}
