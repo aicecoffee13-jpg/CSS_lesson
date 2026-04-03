@@ -41,6 +41,7 @@ h2 {
   padding: 0.5em 5%;
   background: #297987;
   color: #fff;
+  margin: 0;
 }
 
 p {
@@ -70,5 +71,4 @@ dd {
   padding: 0.5em calc(20px + 4px);
   font-size: 1.6rem;
   letter-spacing: 0.1em;
-
 }
