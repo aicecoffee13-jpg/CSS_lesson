@@ -12,14 +12,24 @@
   <div class="wrapper">
     <h1>フレキシブルボックスレイアウト</h1>
 
-    <section class="box">
+    <section class="box case1">
       <h2>display : flex;</h2>
       <ul class="oya">
         <li class="child">1<br>ああああ</li>
         <li class="child">2<br>いいいいいい</li>
-        <li class="child">3<br>ううううううう</li>
+        <li class="child">
+          3<br>ううううううう
+          <p class="mago">孫要素</p>
+          <p class="mago">孫要素</p>
+        </li>
         <li class="child">4<br>えええええ</li>
         <li class="child">5<br>おお</li>
+      </ul>
+      <ul class="desc_list">
+        <li>親要素（ulなど）に指定する</li>
+        <li>子要素（liなど）がコンテンツ量に合わせて左詰めで横に並ぶ</li>
+        <li>子要素の高さが自動的に揃う</li>
+        <li>孫要素以降には影響しない</li>
       </ul>
     </section>
   </div>
