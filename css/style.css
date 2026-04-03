@@ -34,6 +34,7 @@ section {
   box-sizing: border-box;
   border-radius: 30px;
   border-radius: 30px 30px 30px 30px;
+  overflow: hidden;
 }
 
 h2 {
@@ -69,4 +70,5 @@ dd {
   padding: 0.5em calc(20px + 4px);
   font-size: 1.6rem;
   letter-spacing: 0.1em;
+
 }
